@@ -4,7 +4,7 @@ let apiKey = 'k_hhpvic13';
 fetch(`https://imdb-api.com/en/API/Top250Movies/${apiKey}`)
   .then((res) => res.json())
   .then((data) => {
-    // console.log(data);
+    // console.log(data);jj
 
     if (!localStorage.getItem('MovieDataStored')) {
       funcLocalData(data.items);
